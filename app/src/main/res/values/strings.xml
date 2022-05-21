@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MIMS</string>
+    <string name="welcome">Welcome to Chandanaish Upzilla Health Complex</string>
+    <string name="w_description">This is the Govt. health complex which contains 50 beds. Village peoples get well treatment from here. They are fully dependent on it for there treatment.</string>
+    <string name="w_button">Lets go...</string>
+    <string name="f_select">Select who you are ?</string>
+    <string name="imdoctor">I am a doctor!</string>
+    <string name="imnurse">I am a nurse!</string>
+    <string name="imadmin">I am an Admin!</string>
+    <string name="impatient">I am a patient!</string>
+    <string name="imreceptionist">I am a receptionist!</string>
+    <string name="newUser">Not registered? register now!</string>
+    <string name="olduser">Already registered? Login</string>
+    <string name="doctor_s_name">Doctor\'s Name:</string>
+    <string name="submit">submit</string>
+    <string-array name="gender">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/button_bg.xml" value="0.1" />
+        <entry key="app/src/main/res/font/actor.xml" value="0.1078125" />
+        <entry key="app/src/main/res/layout/activity_admin_home_page.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_admin_login.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_admin_registration.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_appointment.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_appointment_date.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_date_picker.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_doctors_home_page.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_doctors_login.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_doctors_registration.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_entry_selection.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_find_doctors.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_nurses_home_page.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_nurses_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_nurses_registration.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_patient_home_page.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_patient_login.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_patient_registration.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_receptionist_home_page.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_receptionist_login.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_receptionist_registration.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/appbar.xml" value="0.19947916666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

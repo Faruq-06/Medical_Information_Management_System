@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#18ffff"
+    tools:context=".DoctorsRegistration">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#18ffff"
+                android:id="@+id/topimage">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="#18ffff"
+                    android:src="@drawable/doctor"
+                    android:id="@+id/top"
+                    android:contentDescription="@string/app_name" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#18ffff"
+                android:layout_below="@+id/topimage"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#18ffff"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:id="@+id/lay1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#18ffff">
+
+                        <TextView
+                            android:id="@+id/registertext"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/overpass_semibold"
+                            android:text="Doctors Registration"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/lay1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Full Name: "
+                            android:ems="6"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/f_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:ems="9"
+                            android:hint="Enter Your Full Name"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"
+                            android:inputType="text"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lay21"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/lay2">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:textSize="18sp"
+                            android:ems="6"
+                            android:textColor="@color/white"
+                            android:text="Father Name: "/>
+                        <EditText
+                            android:id="@+id/fa_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="9"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:hint="Enter Father Name"
+                            android:textColorHint="@color/white"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lay22"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/lay21">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:textSize="18sp"
+                            android:ems="6"
+                            android:text="Mother Name:"
+                            android:textColor="@color/white"/>
+                        <EditText
+                            android:id="@+id/m_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="9"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            android:hint="Enter Mother Name"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lay3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/lay22">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:textSize="18sp"
+                            android:text="Age: "
+                            android:textColor="@color/white"/>
+                        <EditText
+                            android:id="@+id/g_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            android:hint="Your age"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:textSize="18sp"
+                            android:text="Gender: "
+                            android:textColor="@color/white"
+                            />
+                        <Spinner
+                            android:id="@+id/gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="16dp"
+                            android:entries="@array/gender" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lay4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/lay3">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:textSize="18sp"
+                            android:text="Phone number"
+                            android:textColor="@color/white"/>
+                        <EditText
+                            android:id="@+id/contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="9"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            android:hint="Enter your phone number"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lay5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/lay4">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:textSize="18sp"
+                            android:ems="5"
+                            android:text="Email"
+                            android:textColor="@color/white"/>
+                        <EditText
+                            android:id="@+id/e_mail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="9"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            android:hint="Enter your email."
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lay6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/lay5">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:textSize="18sp"
+                            android:ems="5"
+                            android:text="Address"
+                            android:textColor="@color/white"/>
+                        <EditText
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="9"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            android:hint="Enter your address."
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lay7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/lay6">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:textSize="18sp"
+                            android:ems="5"
+                            android:text="Secret Key: "
+                            android:textColor="@color/white"/>
+                        <EditText
+                            android:id="@+id/secret_key"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="9"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            android:hint="Enter your Key."
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card"
+                android:background="#18ffff"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#18ffff"
+                    >
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonDoctor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/overpass_semibold"
+                        android:foregroundGravity="center"
+                        android:onClick="doctorRegister"
+                        android:text="Register"
+                        android:textColor="@color/white"></com.google.android.material.button.MaterialButton>
+                    <TextView
+                        android:id="@+id/doctortxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/buttonDoctor"
+                        android:text="@string/olduser"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/overpass_semibold"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="14sp"
+                        android:onClick="alreadyRegistered"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
