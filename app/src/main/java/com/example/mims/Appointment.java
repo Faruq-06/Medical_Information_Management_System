@@ -26,13 +26,6 @@ public class Appointment extends AppCompatActivity {
 
     }
     public void dateSelect(View view){
-        //apd = ad.getCurrentDate();
-       // appointment_date.setText(apd);
-        finish();
-        Intent intent = new Intent(this,AppointmentDate.class);
-        startActivity(intent);
-        Intent intent1 = getIntent();
-        String messagetxt = intent1.getStringExtra(EXTRA_MESSAGE);
-        appointment_date.setText(messagetxt);
+
     }
 }

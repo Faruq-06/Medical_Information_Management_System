@@ -14,16 +14,15 @@
             android:id="@+id/ViewAppointMentsDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+
             android:layout_alignParentEnd="true"
             android:fontFamily="@font/nunito_sans"
-            android:onClick="dateSelect"
             android:paddingStart="0dp"
             android:paddingLeft="0dp"
             android:paddingEnd="15dp"
             android:paddingRight="15dp"
             android:text="Select Date"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="17sp" />
         <LinearLayout
             android:layout_width="match_parent"
