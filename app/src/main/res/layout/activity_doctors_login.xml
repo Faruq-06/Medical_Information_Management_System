@@ -67,11 +67,12 @@
                         android:layout_marginTop="8dp">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/username"
+                            android:id="@+id/email"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:inputType="textEmailAddress"
                             android:fontFamily="@font/overpass_semibold"
-                            android:hint="Enter Username"></com.google.android.material.textfield.TextInputEditText>
+                            android:hint="Enter email"></com.google.android.material.textfield.TextInputEditText>
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout

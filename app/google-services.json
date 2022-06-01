@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "10959634871",
+    "project_id": "mims-d06d4",
+    "storage_bucket": "mims-d06d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10959634871:android:bab85e06fb6427a1642832",
+        "android_client_info": {
+          "package_name": "com.example.mims"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "10959634871-23psr2bkogou8j5bqbrg2ir3r859883p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy3JJOw9owAG9JGnVjaZtdfBqTfazDDxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "10959634871-23psr2bkogou8j5bqbrg2ir3r859883p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
