@@ -27,7 +27,7 @@ public class NursesLogin extends AppCompatActivity {
     }
     public void notRegister(View view)
     {
-        finish();
+       // finish();
         Intent intent = new Intent(this,NursesRegistration.class);
         startActivity(intent);
     }

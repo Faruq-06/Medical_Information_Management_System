@@ -5,30 +5,55 @@
       <map>
         <entry key="app/src/main/res/drawable/button_bg.xml" value="0.1" />
         <entry key="app/src/main/res/font/actor.xml" value="0.1078125" />
-        <entry key="app/src/main/res/layout/activity_admin_home_page.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_add_ambulance.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_add_doctors.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_add_nurse.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_admin_home_page.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_admin_login.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_admin_registration.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_ambulance_list.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_appointment.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_appointment_date.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_daily_patient_entry.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_data_entry.xml" value="0.18541666666666667" />
         <entry key="app/src/main/res/layout/activity_date_picker.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_delete_nurse.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_doctors_home_page.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_doctors_list.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_doctors_list.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_doctors_login.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_doctors_registration.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_editor.xml" value="0.18541666666666667" />
+        <entry key="app/src/main/res/layout/activity_encrypt.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_entry_selection.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_find_doctors.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_hospital_stat.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_nurse_list.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_nurses_home_page.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_nurses_login.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_nurses_registration.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_nurses_registration.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_patient_home_page.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_patient_list.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_patient_login.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_patient_registration.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_receptionist_home_page.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_patients_appointment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_pay_ment.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_receptionist_home_page.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_receptionist_login.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_receptionist_registration.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_weekly_patient_stat.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/appbar.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/dept_list.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/doctorslist.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/drop_down_item.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/ic_add_icon.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/list_ambulance.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/listitem.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/my_selected_item.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/nurselist.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/patients_list.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/menu/menueditor.xml" value="0.22" />
       </map>
     </option>
   </component>

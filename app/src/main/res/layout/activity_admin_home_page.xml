@@ -96,6 +96,7 @@
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
+                android:onClick="nursesList"
                 >
                 <LinearLayout
                     android:orientation="vertical"
@@ -130,6 +131,7 @@
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
+                android:onClick="patient_List"
                 >
                 <LinearLayout
                     android:orientation="vertical"
@@ -288,6 +290,7 @@
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/stat"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -295,6 +298,7 @@
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
+                android:onClick="h_statistics"
                 >
                 <LinearLayout
                     android:orientation="vertical"
@@ -306,17 +310,18 @@
                     >
                     <ImageView
                         android:layout_gravity="center"
-                        android:src="@drawable/prescription"
+                        android:src="@drawable/stat"
                         android:layout_width="50dp"
                         android:layout_height="50dp"/>
                     <TextView
                         android:layout_gravity="center"
+                        android:textAlignment="center"
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="12sp"
                         android:layout_width="80dp"
                         android:layout_height="wrap_content"
-                        android:text="Other workers"/>
+                        android:text="Stat"/>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -354,6 +359,7 @@
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/ambulance"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -361,6 +367,7 @@
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
+                android:onClick="findAmbulance"
                 >
                 <LinearLayout
                     android:orientation="vertical"

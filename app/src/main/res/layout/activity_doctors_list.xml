@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/cardview_light_background"
     tools:context=".DoctorsList">
-    <androidx.recyclerview.widget.RecyclerView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/recycleView"
-        />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctors List"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycleView"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:onClick="addDoctors"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="bottom|right"
+            android:contentDescription="fab_content_desc"
+            app:layout_anchor="@id/recycleView"
+            app:layout_anchorGravity="bottom|right|end"
+            app:srcCompat="@drawable/ic_add_button"
+            tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
 
 
-</LinearLayout>
+</ScrollView>

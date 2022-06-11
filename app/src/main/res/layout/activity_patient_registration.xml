@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffcdd2"
+    android:background="@color/cardview_light_background"
     tools:context=".PatientRegistration">
     <ScrollView
         android:layout_width="match_parent"
@@ -17,12 +17,12 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffcdd2"
+                android:background="@color/cardview_light_background"
                 android:id="@+id/topimage">
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:background="#ffcdd2"
+                    android:background="@color/cardview_light_background"
                     android:src="@drawable/patient"
                     android:id="@+id/top"
                     android:contentDescription="@string/app_name" />
@@ -32,21 +32,21 @@
                 android:id="@+id/card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffcdd2"
+                android:background="@color/cardview_light_background"
                 android:layout_below="@+id/topimage"
                 >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#ffcdd2"
+                    android:background="@color/cardview_light_background"
                     android:padding="10dp">
                     <LinearLayout
                         android:id="@+id/lay1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
-                        android:background="#ffcdd2">
+                        android:background="@color/cardview_light_background">
 
                     <TextView
                         android:id="@+id/registertext"
@@ -67,27 +67,32 @@
                         android:layout_below="@id/lay1"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginBottom="16dp"
-                            android:layout_marginLeft="5dp"
-                            android:text="Full Name: "
-                            android:ems="6"
-                            android:textColor="@color/white"
-                            android:textSize="18sp" />
 
-                        <EditText
-                            android:id="@+id/f_name"
-                            android:layout_width="wrap_content"
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/signup_fullname"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="16dp"
-                            android:ems="9"
-                            android:hint="Enter Your Full Name"
-                            android:textColor="@color/white"
-                            android:inputType="text"
-                            android:textSize="18sp" />
+                            android:hint="Enter Your name"
+                            android:textColorHint="@color/black"
+                            app:boxStrokeColor="@color/black"
+                            app:boxStrokeWidthFocused="2dp"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            app:hintTextColor="@color/black"
+                            app:startIconTint="@color/black">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/fullname"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:inputType="text"
+                                android:textColor="@color/black"
+                                android:textCursorDrawable="@null" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
 
                     </LinearLayout>
                     <LinearLayout
@@ -96,26 +101,31 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:layout_below="@id/lay2">
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/age_layout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="16dp"
-                            android:textSize="18sp"
-                            android:ems="6"
-                            android:textColor="@color/white"
-                            android:text="Father Name: "/>
-                        <EditText
-                            android:id="@+id/fa_name"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:ems="9"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginBottom="16dp"
-                            android:layout_marginLeft="5dp"
-                            android:inputType="text"
-                            android:textColor="@color/white"
-                            android:textSize="18sp"
-                            android:hint="Enter Father Name"/>
+                            android:hint="Enter Your age"
+                            android:textColorHint="@color/black"
+                            app:boxStrokeColor="@color/black"
+                            app:boxStrokeWidthFocused="2dp"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            app:hintTextColor="@color/black"
+
+                            app:startIconTint="@color/black">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/age"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:inputType="text"
+                                android:textColor="@color/black"
+                                android:textCursorDrawable="@null" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
 
                     </LinearLayout>
                     <LinearLayout
@@ -124,65 +134,64 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:layout_below="@id/lay21">
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/phonelayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="16dp"
-                            android:textSize="18sp"
-                            android:ems="6"
-                            android:text="Mother Name:"
-                            android:textColor="@color/white"/>
-                        <EditText
-                            android:id="@+id/m_name"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:ems="9"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginBottom="16dp"
-                            android:layout_marginLeft="5dp"
-                            android:inputType="text"
-                            android:textSize="18sp"
-                            android:hint="Enter Mother Name"
-                            android:textColor="@color/white"/>
+                            android:hint="Enter Your phone number"
+                            android:textColorHint="@color/black"
+                            app:boxStrokeColor="@color/black"
+                            app:boxStrokeWidthFocused="2dp"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            app:hintTextColor="@color/black"
+
+                            app:startIconTint="@color/black">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:inputType="text"
+                                android:textColor="@color/black"
+                                android:textCursorDrawable="@null" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/lay3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_below="@id/lay22">
-                        <TextView
-                            android:layout_width="wrap_content"
+                        android:layout_below="@id/lay22"
+                        android:orientation="horizontal">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/emaillayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="16dp"
-                            android:textSize="18sp"
-                            android:text="Age: "
-                            android:textColor="@color/white"/>
-                        <EditText
-                            android:id="@+id/g_name"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="16dp"
-                            android:inputType="text"
-                            android:textSize="18sp"
-                            android:hint="Your age"
-                            android:textColor="@color/white"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="16dp"
-                            android:textSize="18sp"
-                            android:text="Gender: "
-                            android:textColor="@color/white"
-                            />
-                        <Spinner
-                            android:id="@+id/gender"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_margin="16dp"
-                            android:entries="@array/gender" />
+                            android:hint="Enter Your email"
+                            android:textColorHint="@color/black"
+                            app:boxStrokeColor="@color/black"
+                            app:boxStrokeWidthFocused="2dp"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            app:hintTextColor="@color/black"
+
+                            app:startIconTint="@color/black">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="textEmailAddress"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
 
 
                     </LinearLayout>
@@ -192,25 +201,29 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:layout_below="@id/lay3">
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/secret_key"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="16dp"
-                            android:textSize="18sp"
-                            android:text="Phone number"
-                            android:textColor="@color/white"/>
-                        <EditText
-                            android:id="@+id/contact"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:ems="9"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginBottom="16dp"
-                            android:layout_marginLeft="5dp"
-                            android:inputType="text"
-                            android:textSize="18sp"
-                            android:hint="Enter your phone number"
-                            android:textColor="@color/white"/>
+                            android:hint="Enter the password"
+                            android:textColorHint="@color/black"
+                            app:boxStrokeColor="@color/black"
+                            app:boxStrokeWidthFocused="2dp"
+                            app:endIconMode="password_toggle"
+                            app:endIconTint="@color/black"
+                            app:hintTextColor="@color/black"
+                            app:startIconTint="@color/black">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/password"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="textPassword"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
 
                     </LinearLayout>
                     <LinearLayout
@@ -219,26 +232,7 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:layout_below="@id/lay4">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="16dp"
-                            android:textSize="18sp"
-                            android:ems="5"
-                            android:text="Email"
-                            android:textColor="@color/white"/>
-                        <EditText
-                            android:id="@+id/e_mail"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:ems="9"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginBottom="16dp"
-                            android:layout_marginLeft="5dp"
-                            android:inputType="text"
-                            android:textSize="18sp"
-                            android:hint="Enter your email."
-                            android:textColor="@color/white"/>
+
 
                     </LinearLayout>
                     <LinearLayout
@@ -247,26 +241,7 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:layout_below="@id/lay5">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="16dp"
-                            android:textSize="18sp"
-                            android:ems="5"
-                            android:text="Address"
-                            android:textColor="@color/white"/>
-                        <EditText
-                            android:id="@+id/address"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:ems="9"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginBottom="16dp"
-                            android:layout_marginLeft="5dp"
-                            android:inputType="text"
-                            android:textSize="18sp"
-                            android:hint="Enter your address."
-                            android:textColor="@color/white"/>
+
 
                     </LinearLayout>
 
@@ -282,7 +257,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#ffcdd2"
+                    android:background="@color/cardview_light_background"
                     >
 
                     <com.google.android.material.button.MaterialButton

@@ -23,14 +23,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/title"
-        android:rowCount="3"
+        android:rowCount="4"
         android:columnCount="2"
-        android:layout_margin="30dp"
+        android:layout_marginTop="50dp"
+
         >
         <androidx.cardview.widget.CardView
             app:cardBackgroundColor="@color/white"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="150dp"
             android:layout_row="0"
             android:layout_column="0"
             android:layout_gravity="fill"
@@ -64,7 +65,7 @@
         <androidx.cardview.widget.CardView
             app:cardBackgroundColor="@color/white"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="150dp"
             android:layout_row="0"
             android:layout_column="1"
             android:layout_gravity="fill"
@@ -98,7 +99,7 @@
         <androidx.cardview.widget.CardView
             app:cardBackgroundColor="@color/white"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="150dp"
             android:layout_row="1"
             android:layout_column="0"
             android:layout_gravity="fill"
@@ -130,9 +131,10 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/data_Entry"
             app:cardBackgroundColor="@color/white"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="150dp"
             android:layout_row="1"
             android:layout_column="1"
             android:layout_gravity="fill"
@@ -140,7 +142,8 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            app:cardElevation="8dp"
+            android:onClick="entryData">
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_gravity="center_vertical|center_horizontal"
@@ -150,11 +153,11 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/emergency_entry"
+                    android:src="@drawable/data_entry"
                     />
                 <TextView
                     android:textColor="@color/black"
-                    android:text="Emergency Entry"
+                    android:text="Data Entry"
                     android:textStyle="bold"
                     android:textAlignment="center"
                     android:layout_width="wrap_content"
@@ -166,7 +169,7 @@
         <androidx.cardview.widget.CardView
             app:cardBackgroundColor="@color/white"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="150dp"
             android:layout_row="2"
             android:layout_column="0"
             android:layout_gravity="fill"
@@ -234,7 +237,7 @@
         <androidx.cardview.widget.CardView
             app:cardBackgroundColor="@color/white"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="150dp"
             android:layout_row="2"
             android:layout_column="1"
             android:layout_gravity="fill"
@@ -264,6 +267,8 @@
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
+
 
     </GridLayout>
 

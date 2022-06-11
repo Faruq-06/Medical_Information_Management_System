@@ -25,7 +25,7 @@ public class DoctorsAdapter extends RecyclerView.Adapter<DoctorsAdapter.myviewHo
     public DoctorsAdapter.myviewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.doctorslist,parent,false);
-        return new myviewHolder(view);
+        return new myviewHolder(view).linkAdapter(this);
     }
 
     @Override
@@ -43,8 +43,9 @@ public class DoctorsAdapter extends RecyclerView.Adapter<DoctorsAdapter.myviewHo
         return dataList.size();
     }
 
-    class myviewHolder extends RecyclerView.ViewHolder{
+   public static class myviewHolder extends RecyclerView.ViewHolder{
         TextView fullname,e_mail,Specialist;
+        private DoctorsAdapter adapter;
 
         public myviewHolder(@NonNull View itemView) {
             super(itemView);
@@ -52,6 +53,11 @@ public class DoctorsAdapter extends RecyclerView.Adapter<DoctorsAdapter.myviewHo
             e_mail = itemView.findViewById(R.id.t2);
             Specialist = itemView.findViewById(R.id.t3);
 
+
+        }
+        public myviewHolder linkAdapter(DoctorsAdapter adapter){
+            this.adapter = adapter;
+            return this;
 
         }
 

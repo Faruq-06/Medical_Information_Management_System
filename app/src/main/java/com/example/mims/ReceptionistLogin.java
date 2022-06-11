@@ -21,7 +21,7 @@ public class ReceptionistLogin extends AppCompatActivity {
 
     }
     public void receptionistLogin(View view){
-        finish();
+
         Intent intent = new Intent(this,ReceptionistHomePage.class);
         startActivity(intent);
     }

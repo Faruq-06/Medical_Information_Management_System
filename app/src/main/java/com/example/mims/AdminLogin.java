@@ -54,6 +54,7 @@ public class AdminLogin extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
+                            finish();
                             Intent intent = new Intent(getApplicationContext(),AdminHomePage.class);
                             startActivity(intent);
 

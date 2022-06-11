@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mims">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,51 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MIMS">
+        <activity
+            android:name=".AmbulanceList"
+            android:exported="false" />
+        <activity
+            android:name=".PatientList"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteNurse"
+            android:exported="false" />
+        <activity
+            android:name=".AddNurse"
+            android:exported="false" />
+        <activity
+            android:name=".PayMent"
+            android:exported="false" />
+        <activity
+            android:name=".PatientsAppointment"
+            android:exported="false" />
+        <activity
+            android:name=".EditorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddAmbulance"
+            android:exported="false" />
+        <activity
+            android:name=".DataEntry"
+            android:exported="false" />
+        <activity
+            android:name=".Encrypt"
+            android:exported="false" />
+        <activity
+            android:name=".WeeklyPatient_stat"
+            android:exported="false" />
+        <activity
+            android:name=".HospitalStat"
+            android:exported="false" />
+        <activity
+            android:name=".DailyPatientEntry"
+            android:exported="false" />
+        <activity
+            android:name=".NurseList"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Doctors"
+            android:exported="false" />
         <activity
             android:name=".DoctorsList"
             android:exported="false" />
@@ -79,9 +126,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-3940256099942544~3347511713" />
     </application>
 
 </manifest>
