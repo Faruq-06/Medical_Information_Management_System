@@ -14,6 +14,8 @@ import com.example.mims.AES256;
 import com.example.mims.ModelClasses.DoctorsModel;
 import com.example.mims.ModelClasses.PatientModel_show;
 import com.example.mims.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 
@@ -35,11 +37,22 @@ public class PatientsAdapter extends RecyclerView.Adapter<PatientsAdapter.myview
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onBindViewHolder(@NonNull PatientsAdapter.myviewHolder holder, int position) {
-        holder.fullname.setText(AES256.decrypt(dataList.get(position).getFullname()));
-        holder.phone.setText(AES256.decrypt(dataList.get(position).getPhone()));
+
+        PatientModel_show patientModel_show = dataList.get(position);
+        holder.fullname.setText(AES256.decrypt(patientModel_show.getFullname()));
+        holder.phone.setText(AES256.decrypt(patientModel_show.getPhone()));
       //  holder.Specialist.setText(dataList.get(position).getSpecialist());
         //holder.email.setText(dataList.get(position).getEmail());
         // holder.speciality.setText(dataList.get(position).getSpeciality());
+        holder.floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseFirestore.getInstance().collection("Patients")
+                        .document(patientModel_show.getId()).delete();
+                dataList.remove(patientModel_show);
+                notifyDataSetChanged();
+            }
+        });
 
     }
 
@@ -49,14 +62,17 @@ public class PatientsAdapter extends RecyclerView.Adapter<PatientsAdapter.myview
     }
 
     public static class myviewHolder extends RecyclerView.ViewHolder{
+
         TextView fullname,phone;
         private PatientsAdapter adapter;
+        FloatingActionButton floatingActionButton;
 
         public myviewHolder(@NonNull View itemView) {
             super(itemView);
             fullname = itemView.findViewById(R.id.t1);
             phone = itemView.findViewById(R.id.t2);
-           // Specialist = itemView.findViewById(R.id.t3);
+            floatingActionButton = itemView.findViewById(R.id.floating_subtract_button);
+
 
 
         }

@@ -23,7 +23,6 @@ import java.util.List;
 
 public class PatientList extends AppCompatActivity {
     FloatingActionButton floatingActionButton;
-    FloatingActionButton floatingActionButton1;
 
     RecyclerView rcview;
     ArrayList<PatientModel_show> dataList;
@@ -36,7 +35,6 @@ public class PatientList extends AppCompatActivity {
         setContentView(R.layout.activity_patient_list);
         rcview = findViewById(R.id.recycleView);
         floatingActionButton = findViewById(R.id.floating_action_button);
-        floatingActionButton1 = findViewById(R.id.floating_subtract_button);
 
         rcview.setLayoutManager(new LinearLayoutManager(this));
 
@@ -51,8 +49,11 @@ public class PatientList extends AppCompatActivity {
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
                         List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
                         for (DocumentSnapshot d: list){
-                            PatientModel_show obj = d.toObject(PatientModel_show.class);
-                            dataList.add(obj);
+                            dataList.add(new PatientModel_show(
+                                    d.getString("fullname"),
+                                    d.getString("phone"),
+                                    d.getId()
+                            ));
                         }
                         rcview.setAdapter(myadapter);
                     }

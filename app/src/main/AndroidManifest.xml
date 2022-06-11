@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MIMS">
         <activity
+            android:name=".AppointmentView"
+            android:exported="false" />
+        <activity
+            android:name=".NurseUpdate"
+            android:exported="false" />
+        <activity
             android:name=".AmbulanceList"
             android:exported="false" />
         <activity

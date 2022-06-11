@@ -24,7 +24,6 @@ import java.util.List;
 public class NurseList extends AppCompatActivity {
 
     FloatingActionButton floatingActionButton;
-    FloatingActionButton floatingActionButton1;
 
     RecyclerView rcview;
     ArrayList<NurseModel> dataList;
@@ -38,13 +37,12 @@ public class NurseList extends AppCompatActivity {
 
         rcview = findViewById(R.id.recycleView);
         floatingActionButton = findViewById(R.id.floating_action_button);
-        floatingActionButton1 = findViewById(R.id.floating_subtract_button);
 
         rcview.setLayoutManager(new LinearLayoutManager(this));
 
         dataList = new ArrayList<>();
 
-        myadapter = new NurseAdapter(dataList);
+        myadapter = new NurseAdapter(dataList,this);
         db = FirebaseFirestore.getInstance();
 
         db.collection("Nurses").get()
@@ -53,8 +51,16 @@ public class NurseList extends AppCompatActivity {
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
                         List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
                         for (DocumentSnapshot d: list){
-                            NurseModel obj = d.toObject(NurseModel.class);
-                            dataList.add(obj);
+                            dataList.add(new NurseModel(
+                                    d.getString("fullname"),
+                                    d.getString("phone"),
+                                    d.getString("w_number"),
+                                    d.getString("email"),
+                                    d.getString("speciality"),
+                                    d.getString("password"),
+
+                                    d.getId()
+                            ));
                         }
                         rcview.setAdapter(myadapter);
                     }

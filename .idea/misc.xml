@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/button_bg.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1485" />
         <entry key="app/src/main/res/font/actor.xml" value="0.1078125" />
         <entry key="app/src/main/res/layout/activity_add_ambulance.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_add_doctors.xml" value="0.19947916666666668" />
@@ -14,6 +15,7 @@
         <entry key="app/src/main/res/layout/activity_ambulance_list.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_appointment.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_appointment_date.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_appointment_view.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_daily_patient_entry.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_data_entry.xml" value="0.18541666666666667" />
         <entry key="app/src/main/res/layout/activity_date_picker.xml" value="0.1" />
@@ -29,6 +31,7 @@
         <entry key="app/src/main/res/layout/activity_hospital_stat.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_nurse_list.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/layout/activity_nurse_update.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_nurses_home_page.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_nurses_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_nurses_registration.xml" value="0.22" />

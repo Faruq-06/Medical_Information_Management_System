@@ -2,22 +2,27 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/cardview"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     app:cardCornerRadius="6dp"
     android:elevation="5dp"
     android:orientation="vertical"
     app:cardUseCompatPadding="true">
 
-    <RelativeLayout
+    <LinearLayout
         android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:padding="2dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:orientation="horizontal">
             <LinearLayout
                 android:layout_width="60dp"
@@ -32,6 +37,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -43,63 +49,80 @@
                         android:layout_height="wrap_content"
                         android:text="Name : "
                         android:textStyle="bold"
-                        android:textSize="18sp"
-                        android:textColor="#009688"/>
+                        android:textSize="14sp"
+                        android:textColor="@color/black"/>
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/t1"
                         android:text="Name"
                         android:textStyle="bold"
-                        android:textSize="18sp"
-                        android:textColor="#009688"/>
+                        android:textSize="14sp"
+                        android:textColor="@color/black"/>
+
+
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/l2"
                     android:layout_width="wrap_content"
-                    android:layout_height="50dp"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_below="@id/l1">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="phone: "
-                        android:textSize="15sp"
-                        android:textColor="@color/teal_700"/>
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/t2"
                         android:text="phone"
-                        android:textColor="@color/teal_700"
-                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:text="word no: "
-                        android:textSize="15sp"
-                        android:textColor="@color/teal_700"/>
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:id="@+id/t3"
                         android:text="word no"
-                        android:textSize="15sp"
-                        android:textColor="@color/teal_700"/>
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
 
 
 
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="60dp">
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floating_subtract_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="fab_content_desc"
+                    app:srcCompat="@drawable/ic_baseline_delete_24"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+
 
         </LinearLayout>
 
 
-
-    </RelativeLayout>
+    </LinearLayout>
 
 </androidx.cardview.widget.CardView>

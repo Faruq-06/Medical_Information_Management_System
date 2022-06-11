@@ -233,6 +233,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/ambulance"
             app:cardBackgroundColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -243,7 +244,8 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            app:cardElevation="8dp"
+            android:onClick="listAmbulance">
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_gravity="center_vertical|center_horizontal"

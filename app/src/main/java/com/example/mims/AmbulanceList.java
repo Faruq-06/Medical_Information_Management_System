@@ -36,9 +36,6 @@ public class AmbulanceList extends AppCompatActivity {
         setContentView(R.layout.activity_ambulance_list);
 
         rcview = findViewById(R.id.recycleView);
-        floatingActionButton = findViewById(R.id.floating_action_button);
-        floatingActionButton1 = findViewById(R.id.floating_subtract_button);
-
         rcview.setLayoutManager(new LinearLayoutManager(this));
 
         dataList = new ArrayList<>();

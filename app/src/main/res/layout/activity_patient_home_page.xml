@@ -121,6 +121,7 @@
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/findDoctors"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -128,6 +129,7 @@
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
+                android:onClick="findDoctors"
                 >
                 <LinearLayout
                     android:orientation="vertical"
@@ -353,6 +355,7 @@
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/ambulance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -360,6 +363,7 @@
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
+                android:onClick="ambulanceList"
                 >
                 <LinearLayout
                     android:orientation="vertical"

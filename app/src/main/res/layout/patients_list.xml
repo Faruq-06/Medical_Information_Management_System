@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     app:cardCornerRadius="6dp"
     android:elevation="5dp"
     android:orientation="vertical"
@@ -33,7 +34,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
@@ -86,6 +87,20 @@
                 </LinearLayout>
 
 
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="60dp">
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floating_subtract_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="fab_content_desc"
+                    app:srcCompat="@drawable/ic_baseline_delete_24"
+                    tools:ignore="VectorDrawableCompat" />
             </LinearLayout>
 
         </LinearLayout>
